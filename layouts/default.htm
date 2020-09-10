@@ -1,0 +1,60 @@
+description = "Layout padrão"
+==
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+        {% partial 'site/head' %}
+	<!-- =======================================================
+	  * Template Name: DevFolio - v2.3.0
+	  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+	  * Author: BootstrapMade.com
+	  * License: https://bootstrapmade.com/license/
+	  ======================================================== -->
+	</head>
+
+	<body
+		id="page-top">
+
+		<!-- ======= Header/ Navbar ======= -->
+        {% partial 'site/nav' %}
+
+		<!-- ======= Intro Section ======= -->
+		<div id="home" class="intro route bg-image" style="background-image: url(themes/devfolio/assets/img/intro-bg.jpg)">
+			<div class="overlay-itro"></div>
+			<div class="intro-content display-table">
+				<div class="table-cell">
+					<div
+						class="container">
+						<!--<p class="display-6 color-d">Hello, world!</p>-->
+						<h1 class="intro-title mb-4">I am Morgan Freeman</h1>
+						<p class="intro-subtitle">
+							<span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span>
+							<strong class="text-slider"></strong>
+						</p>
+						<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Intro Section -->
+
+		<main id="main">
+			{% page %}
+		</main>
+		<!-- End #main -->
+
+		<!-- ======= Footer ======= -->
+		<footer>
+            {% partial 'site/footer' %}
+		</footer>
+		<!-- End  Footer -->
+
+		<a href="#" class="back-to-top">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+		<div id="preloader"></div>
+        {% partial 'site/foot' %}
+	</body>
+
+</html>
