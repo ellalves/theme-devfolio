@@ -59,6 +59,7 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      console.log(mainNav_height);
       if (target.length) {
         var scrollto = target.offset().top - mainNav_height;
         $('html, body').animate({
